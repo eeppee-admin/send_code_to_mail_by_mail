@@ -23,4 +23,5 @@ jobs:
       run: |
         go mod tidy
         curl ifconfig.me
-        go run main.go
+        go build main.go
+        ./main
