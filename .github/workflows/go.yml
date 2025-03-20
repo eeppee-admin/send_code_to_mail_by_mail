@@ -1,0 +1,25 @@
+name: Go Project
+
+on:
+  push:
+    branches: [ master ] # 指定触发的分支，比如 main 或 master
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Go
+      uses: actions/setup-go@v4
+      with:
+        go-version: 1.21 # 根据你的项目需求设置 Go 版本
+
+    - name: Run makefile commands
+      run: |
+        go mod tidy
+        go run main.go

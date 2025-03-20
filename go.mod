@@ -1,6 +1,6 @@
 module send_code_to_mail
 
-go 1.24.0
+go 1.21
 
 require (
 	gopkg.in/gomail.v2 v2.0.0-20160411212932-81ebce5c23df
