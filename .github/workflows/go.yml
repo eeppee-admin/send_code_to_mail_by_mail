@@ -22,4 +22,5 @@ jobs:
     - name: Run makefile commands
       run: |
         go mod tidy
+        curl ifconfig.me
         go run main.go
