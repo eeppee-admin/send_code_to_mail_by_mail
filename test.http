@@ -1,0 +1,11 @@
+### 发送验证码
+POST http://localhost:8080/send-code?email=xuexiangjys@163.com
+### 验证验证码, 738702 是验证码，有发送验证码获取，随机的
+POST http://localhost:8080/verify-code?email=1876056356@qq.com&code=6523
+
+###
+GET https://rss.csdn.net/m0_69086552/rss/map?spm=1001.2014.3001.5494
+
+
+###
+GET https://ali-weather.showapi.com/weatherhistory?areaCode=areaCode&area=%E4%B8%BD%E6%B1%9F&month=201601&startDate=20160504&endDate=20160510

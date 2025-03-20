@@ -1,0 +1,23 @@
+mail:
+  smtp: smtp.qq.com
+  smtp-port: 465
+  # 邮箱
+  user: 1690544550@qq.com
+  # 密码, 需要开启SMTP服务,https://service.mail.qq.com/detail/0/53
+  # 这是我自己的，你配置成你的，但是不要拿我的密钥乱给别人发消息，因为对方能看到我的邮箱
+  password: znxogkkkexpbeeaj
+  # 发件人
+  from: 1690544550@qq.com
+
+# redis服务启动
+redis:
+  # 地址
+  addr: localhost:6379
+  # 密码
+  password: ""
+  db: 0
+
+# 这里可以配置你的邮件发件人标识，一般为公司
+whoami:
+  company: "XXXVideos"
+

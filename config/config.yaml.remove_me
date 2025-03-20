@@ -1,0 +1,17 @@
+mail:
+  smtp: smtp.qq.com
+  smtp-port: 465
+  # 邮箱
+  user: 1690544550@qq.com
+  # 密码, 需要开启SMTP服务,https://service.mail.qq.com/detail/0/53
+  password: <set your own password>
+  # 发件人
+  from: 1690544550@qq.com
+
+# redis服务启动
+redis:
+  # 地址
+  addr: localhost:6379
+  # 密码
+  password: ""
+  db: 0
