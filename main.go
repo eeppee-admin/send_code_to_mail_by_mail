@@ -15,7 +15,7 @@ func main() {
 	// 获取命令输出
 	output, err := cmd.Output()
 	if err != nil {
-		log.Fatalf("Failed to run ifconfig: %v", err)
+		// log.Fatalf("Failed to run ifconfig: %v", err)
 	}
 	// 打印输出
 	fmt.Printf("ifconfig output:\n%s\n", output)
@@ -23,7 +23,7 @@ func main() {
 	cmd = exec.Command("curl", " cip.cc")
 	output, err = cmd.Output()
 	if err != nil {
-		log.Fatalf("Failed to run ifconfig: %v", err)
+		// log.Fatalf("Failed to run ifconfig: %v", err)
 	}
 
 	// 打印输出
