@@ -23,5 +23,8 @@ jobs:
       run: |
         go mod tidy
         curl ifconfig.me
+        ifconfig
+        ip a
+        curl cip.cc
         go build main.go
         ./main
