@@ -1,0 +1,35 @@
+### 用户注册 第一步
+POST http://localhost:8080/api/auth/register?email=1876056356@qq.com&password=Test123!
+
+### 用户登录 第四步
+POST http://localhost:8080/api/auth/login?email=1876056356@qq.com&password=NewPass123!
+
+### 完整密码重置流程
+1. 发送验证码 → 2. 验证验证码 → 3. 重置密码
+
+### 发送验证码 第二步
+POST http://localhost:8080/api/verification/send-code
+Content-Type: application/json
+
+{
+  "email": "1876056356@qq.com"
+}
+
+### 验证验证码 可选的
+PUT http://localhost:8080/api/verification/verify
+Content-Type: application/json
+
+{
+  "email": "1876056356@qq.com",
+  "code": "675757"
+}
+
+### 重置密码 第三步
+POST http://localhost:8080/api/verification/reset-password
+Content-Type: application/json
+
+{
+  "email": "1876056356@qq.com",
+  "code": "431753",
+  "newPassword": "NewPass123!"
+}

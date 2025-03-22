@@ -1,0 +1,26 @@
+### 发送验证码
+POST http://localhost:8080/api/verification/send-code
+Content-Type: application/json
+
+{
+  "email": "1876056356@qq.com"
+}
+
+### 验证验证码
+PUT http://localhost:8080/api/verification/verify
+Content-Type: application/json
+
+{
+  "email": "1876056356@qq.com",
+  "code": "675757"
+}
+
+### 重置密码
+POST http://localhost:8080/api/verification/reset-password
+Content-Type: application/json
+
+{
+  "email": "1876056356@qq.com",
+  "code": "028923",
+  "newPassword": "NewPass123!"
+}
